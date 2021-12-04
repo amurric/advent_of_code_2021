@@ -9,8 +9,7 @@ enum Part {
     Second(String),
 }
 
-fn first_part(file_content: String) -> i32
-{
+fn first_part(file_content: String) -> i32 {
     let mut x = 0;
     let mut depth = 0;
 
@@ -29,8 +28,7 @@ fn first_part(file_content: String) -> i32
     x * depth
 }
 
-fn second_part(file_content: String) -> i32
-{
+fn second_part(file_content: String) -> i32 {
     let mut x = 0;
     let mut depth = 0;
     let mut aim = 0;
