@@ -35,7 +35,7 @@ fn second_part(filename: String) {
     let file_content = fs::read_to_string(filename).expect("Error reading input file.");
 
     let mut count = 0;
-    let mut measurement_window= Vec::new();
+    let mut measurement_window = Vec::new();
 
     for line in file_content.lines() {
         let depth = line.parse::<i32>().expect("Not a number.");
