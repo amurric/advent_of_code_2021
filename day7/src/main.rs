@@ -30,7 +30,7 @@ fn first_part(file_content: String) -> i32 {
     positions.sort();
 
     let median1 = positions[positions.len() / 2];
-    let median2 = positions[positions.len() / 2 + 1];
+    let median2 = positions[positions.len() / 2 - 1];
 
     cmp::min(get_fuel(&positions, median1), get_fuel(&positions, median2))
 }
